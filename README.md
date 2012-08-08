@@ -1,5 +1,7 @@
 Apache Kafka is a high throughput distributed messaging system. This project defines some utilities for connecting to kafka from java. It defines Spring style templates for producers and consumers.
 
+Imp Note: This code will only work on kafka 0.7.1. The consumer code in this project is not compatible with 0.7.0.
+
 The consumer template uses generic object pool. If you want to use spring's dependency injection, here is how you will the classes defined in this project:
 
     <bean id="kafkaConsumerFactory" class="com.gumgum.kafka.consumer.KafkaConsumerFactory">
